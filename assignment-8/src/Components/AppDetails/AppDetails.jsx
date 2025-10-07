@@ -4,6 +4,7 @@ import axios from "axios";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewsImg from "../../assets/icon-review.png";
+import ReactCharts from "../ReactCharts/ReactCharts";
 
 const AppDetails = () => {
   const [specificData, setSpecificData] = useState([]);
@@ -36,6 +37,8 @@ const AppDetails = () => {
     }).format(num);
   };
   // SHow download number in understandable way End
+
+  const ratings = specificData.ratings;
 
   return (
     <>
@@ -94,6 +97,7 @@ const AppDetails = () => {
         </div>
       </div>
       <div className="divider py-24"></div>
+      <ReactCharts ratings={ratings} />
     </>
   );
 };
