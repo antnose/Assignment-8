@@ -5,9 +5,12 @@ import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewsImg from "../../assets/icon-review.png";
 import ReactCharts from "../ReactCharts/ReactCharts";
+import { addToStoreDb, getStoredApp } from "../../Utility/addToLocalStor";
 
 const AppDetails = () => {
   const [specificData, setSpecificData] = useState([]);
+  const [install, setInstall] = useState(false);
+  const [lsData, setLsData] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -27,6 +30,32 @@ const AppDetails = () => {
     };
     allData();
   }, [id]);
+
+  // Install Button Functionality Start
+
+  useEffect(() => {
+    const firstFunc = async () => {
+      setLsData(...lsData, getStoredApp());
+      if (getStoredApp().includes(id)) {
+        setInstall(true);
+      }
+    };
+    firstFunc();
+  }, [id]);
+
+  const handleInstall = () => {
+    setLsData(...lsData, getStoredApp());
+    console.log(getStoredApp());
+    console.log(lsData);
+    if (getStoredApp().includes(id)) {
+      alert("Data exist!");
+      setInstall(true);
+    } else {
+      addToStoreDb(id);
+      setInstall(true);
+    }
+  };
+  // Install Button Functionality End
 
   // SHow download number in understandable way start
   const formatDownloads = (num) => {
@@ -91,8 +120,12 @@ const AppDetails = () => {
             </div>
           </div>
           <div className="card-actions mt-7">
-            <button className="btn btn-success text-white text-xl">
-              Install Now ({specificData.size} MB)
+            <button
+              disabled={install}
+              onClick={() => handleInstall()}
+              className="btn btn-success text-white text-xl"
+            >
+              {install ? "Installed" : `Install Now (${specificData.size} MB) `}
             </button>
           </div>
         </div>

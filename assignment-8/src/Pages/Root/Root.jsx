@@ -7,8 +7,10 @@ const Root = () => {
     <>
       <Navbar />
 
-      <div className="container mx-auto text-center pt-10 bg-gray-50">
-        <Outlet />
+      <div className="bg-gray-50">
+        <div className="container mx-auto text-center pt-10">
+          <Outlet />
+        </div>
       </div>
 
       <Footer />

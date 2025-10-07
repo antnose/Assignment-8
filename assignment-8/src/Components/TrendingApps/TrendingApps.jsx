@@ -3,7 +3,7 @@ import ApplicationCard from "../ApplicationCard/ApplicationCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const TrendingApps = ({ datas }) => {
+const TrendingApps = () => {
   const [homePageData, setHomePageData] = useState([]);
 
   // Load 8 data
