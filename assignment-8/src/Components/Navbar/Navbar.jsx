@@ -67,7 +67,7 @@ const Navbar = () => {
                 fill="#fff"
               />
             </svg>
-            Button
+            Contribute
           </Link>
         </div>
       </div>

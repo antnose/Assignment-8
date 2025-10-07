@@ -1,4 +1,3 @@
-import { useLoaderData } from "react-router";
 import ApplicationCard from "../../Components/ApplicationCard/ApplicationCard";
 import axios from "axios";
 import { useEffect, useState } from "react";

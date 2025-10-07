@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home/Home";
 import Root from "../Pages/Root/Root";
 import AllApps from "../Pages/AllApps/AllApps";
+import AppDetails from "../Components/AppDetails/AppDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,8 @@ const router = createBrowserRouter([
       },
       {
         path: "allApps/:id",
-        loader: () => fetch("appsData.json"),
-        element: <h1>Hfgdg</h1>,
+        loader: ({ params }) => {},
+        Component: AppDetails,
       },
     ],
   },
