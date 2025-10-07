@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import appleStoreLogo from "../../assets/appleStore.svg";
 import playStoreLogo from "../../assets/playStore.svg";
 import heroPng from "../../assets/hero.png";
+import TrendingApps from "../../Components/TrendingApps/TrendingApps";
 
 const Home = () => {
+  const datas = useLoaderData();
+
   return (
     <div>
       {/* Title Section Start */}
@@ -88,6 +91,7 @@ const Home = () => {
         </div>
       </div>
       {/* Banner Section End */}
+      <TrendingApps datas={datas} />
     </div>
   );
 };

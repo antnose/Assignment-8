@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/bq1gBQw/img13.jpg",
+    "title": "TaskFlow",
+    "companyName": "ZenTech Solutions",
+    "id": 1,
+    "description": "A modern task management app designed to boost your productivity with AI reminders and seamless collaboration.",
+    "size": 42,
+    "reviews": 1345,
+    "ratingAvg": 4.6,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/j9FvRCTL/img14.jpg",
+    "title": "PhotoCraft",
+    "companyName": "Pixel Dynamics",
+    "id": 2,
+    "description": "Edit photos with filters, AI touch-ups, and a professional toolset right on your phone.",
+    "size": 80,
+    "reviews": 5400,
+    "ratingAvg": 4.8,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BH8x2K3X/img15.jpg",
+    "title": "NoteVerse",
+    "companyName": "Skyline Labs",
+    "id": 3,
+    "description": "A smart note-taking app with markdown support, cloud sync, and voice input.",
+    "size": 25,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 990 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yFjCGF6k/img16.jpg",
+    "title": "FitMate",
+    "companyName": "ActiveCore",
+    "id": 4,
+    "description": "Track your workouts, steps, and calories with a sleek interface and AI-based fitness suggestions.",
+    "size": 65,
+    "reviews": 8700,
+    "ratingAvg": 4.7,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 5300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/N65gCvLW/img18.jpg",
+    "title": "CookPal",
+    "companyName": "HomeChef Inc.",
+    "id": 5,
+    "description": "Discover and save recipes with step-by-step instructions and smart grocery lists.",
+    "size": 55,
+    "reviews": 3100,
+    "ratingAvg": 4.3,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1070 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/dwcPJmgn/img19.jpg",
+    "title": "FinanceGo",
+    "companyName": "BrightVault",
+    "id": 6,
+    "description": "A secure personal finance tracker with budgeting and expense analytics.",
+    "size": 60,
+    "reviews": 4900,
+    "ratingAvg": 4.6,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2830 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Jw5bDJ7c/img20.jpg",
+    "title": "LangLearn",
+    "companyName": "EduVerse",
+    "id": 7,
+    "description": "Master new languages with gamified lessons, quizzes, and AI speech recognition.",
+    "size": 75,
+    "reviews": 8900,
+    "ratingAvg": 4.8,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 5900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/KxdPLVP8/img21.jpg",
+    "title": "TuneBeats",
+    "companyName": "MelodySoft",
+    "id": 8,
+    "description": "A next-gen music streaming app with smart playlists and offline listening.",
+    "size": 90,
+    "reviews": 12000,
+    "ratingAvg": 4.9,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 450 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 7450 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9m6C9c9q/img24.jpg",
+    "title": "Tripify",
+    "companyName": "TravelNest",
+    "id": 9,
+    "description": "Plan trips, book hotels, and explore destinations with real-time recommendations.",
+    "size": 78,
+    "reviews": 4600,
+    "ratingAvg": 4.4,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2410 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/KctJs45j/app1.jpg",
+    "title": "Bookly",
+    "companyName": "ReadZone",
+    "id": 10,
+    "description": "Read and share eBooks with a beautiful interface and a growing digital library.",
+    "size": 48,
+    "reviews": 3500,
+    "ratingAvg": 4.5,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZRm5pcvq/img23.jpg",
+    "title": "MindZen",
+    "companyName": "Calmify",
+    "id": 11,
+    "description": "Meditation and relaxation app designed to reduce stress and improve sleep quality.",
+    "size": 38,
+    "reviews": 8200,
+    "ratingAvg": 4.9,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 6390 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RTb8bFPM/img1.jpg",
+    "title": "WeatherPro",
+    "companyName": "ClimateIQ",
+    "id": 12,
+    "description": "Get accurate weather forecasts, alerts, and satellite maps worldwide.",
+    "size": 40,
+    "reviews": 2500,
+    "ratingAvg": 4.2,
+    "downloads": 510000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 670 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/YBt0d6xj/img2.jpg",
+    "title": "ChatWave",
+    "companyName": "ComNet",
+    "id": 13,
+    "description": "A secure chat platform with voice, video, and group messaging capabilities.",
+    "size": 58,
+    "reviews": 15000,
+    "ratingAvg": 4.7,
+    "downloads": 6800000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5WFgpjwW/img3.jpg",
+    "title": "ShopEase",
+    "companyName": "eComify",
+    "id": 14,
+    "description": "A lightweight shopping app offering thousands of brands and daily deals.",
+    "size": 60,
+    "reviews": 9400,
+    "ratingAvg": 4.6,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nNncf6Xt/img7.png",
+    "title": "StreamBox",
+    "companyName": "VisionPlay",
+    "id": 15,
+    "description": "Stream movies, series, and live TV in high definition with personalized recommendations.",
+    "size": 95,
+    "reviews": 20000,
+    "ratingAvg": 4.9,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 14900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/n84QyxKf/img8.jpg",
+    "title": "DriveSafe",
+    "companyName": "AutoCore",
+    "id": 16,
+    "description": "Monitor your driving behavior and earn rewards for safe habits.",
+    "size": 70,
+    "reviews": 2300,
+    "ratingAvg": 4.4,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 890 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TD6Z2VXb/img9.jpg",
+    "title": "CryptoHub",
+    "companyName": "ChainLinkers",
+    "id": 17,
+    "description": "Track cryptocurrencies, prices, and get real-time market insights.",
+    "size": 64,
+    "reviews": 7800,
+    "ratingAvg": 4.6,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 4580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LdgVvR4t/img11.jpg",
+    "title": "DocScan",
+    "companyName": "Scanify Tech",
+    "id": 18,
+    "description": "Turn your phone into a portable scanner with PDF export and OCR support.",
+    "size": 33,
+    "reviews": 4200,
+    "ratingAvg": 4.5,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 550 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 2230 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5x9DbQWy/img10.jpg",
+    "title": "EventPro",
+    "companyName": "MeetUpHub",
+    "id": 19,
+    "description": "Find and organize events near you with smart scheduling tools.",
+    "size": 47,
+    "reviews": 3500,
+    "ratingAvg": 4.3,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1590 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LdgVvR4t/img11.jpg",
+    "title": "SmartHome",
+    "companyName": "HomeSync",
+    "id": 20,
+    "description": "Control your lights, appliances, and devices from anywhere securely.",
+    "size": 50,
+    "reviews": 6100,
+    "ratingAvg": 4.7,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 3540 }
+    ]
+  }
+]
