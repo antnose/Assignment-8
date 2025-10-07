@@ -5,7 +5,7 @@ const Navbar = () => {
   const links = (
     <>
       <NavLink to={"/"}>Home</NavLink>
-      <NavLink>Apps</NavLink>
+      <NavLink to={"/allApps"}>Apps</NavLink>
       <NavLink>Installation</NavLink>
     </>
   );

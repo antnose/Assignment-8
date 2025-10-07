@@ -1,11 +1,11 @@
 const ApplicationCard = ({ data }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="card bg-base-100 w-full  shadow-sm">
       <figure className="bg-base-100 p-4">
         <img
           className="h-64 object-cover rounded-2xl "
           src={data.image}
-          alt="Shoes"
+          alt={data.title}
         />
       </figure>
       <div className="card-body">

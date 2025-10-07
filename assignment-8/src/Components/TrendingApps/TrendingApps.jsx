@@ -18,12 +18,13 @@ const TrendingApps = ({ datas }) => {
       <p className="text-gray-600">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-x-16 gap-7 pb-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1   gap-4 pb-10 p-10">
         {homePageData.map((data) => (
           <ApplicationCard key={data.id} data={data} />
         ))}
       </div>
       <Link
+        to={"/allApps"}
         className="bg-gradient-to-r from-violet-700 to-purple-700 
                 hover:from-violet-600 hover:to-purple-600 
                 text-white font-bold py-2 px-4 rounded 
