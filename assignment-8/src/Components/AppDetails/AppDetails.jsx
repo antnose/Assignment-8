@@ -32,7 +32,6 @@ const AppDetails = () => {
   }, [id]);
 
   // Install Button Functionality Start
-
   useEffect(() => {
     const firstFunc = async () => {
       setLsData(...lsData, getStoredApp());
