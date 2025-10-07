@@ -9,14 +9,15 @@ import {
   Legend,
 } from "recharts";
 
-const ReactCharts = ({ ratings }) => {
+const ReactCharts = ({ ratings, description }) => {
+  console.log(description);
   console.log(ratings);
   const chartData = ratings?.map((r) => ({
     name: r.name,
     count: r.count,
   }));
   return (
-    <div className="w-full h-100  shadow rounded-2xl p-4">
+    <div className="w-full   rounded-2xl p-4">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           layout="vertical"
@@ -41,6 +42,20 @@ const ReactCharts = ({ ratings }) => {
           />
         </BarChart>
       </ResponsiveContainer>
+
+      {/* Show description pera by pera  */}
+      <div className="space-y-5 text-gray-700 leading-relaxed mt-4 text-justify">
+        {description
+          ?.split(/(?<=[.?!])\s+/)
+          .reduce((acc, sentence, i) => {
+            if (i % 4 === 0) acc.push([]);
+            acc[acc.length - 1].push(sentence);
+            return acc;
+          }, [])
+          .map((group, index) => (
+            <p key={index}>{group.join(" ")}</p>
+          ))}
+      </div>
     </div>
   );
 };

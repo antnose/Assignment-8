@@ -39,6 +39,7 @@ const AppDetails = () => {
   // SHow download number in understandable way End
 
   const ratings = specificData.ratings;
+  const description = specificData.description;
 
   return (
     <>
@@ -97,7 +98,7 @@ const AppDetails = () => {
         </div>
       </div>
       <div className="divider py-24"></div>
-      <ReactCharts ratings={ratings} />
+      <ReactCharts ratings={ratings} description={description} />
     </>
   );
 };
