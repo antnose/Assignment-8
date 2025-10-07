@@ -1,16 +1,30 @@
 import { Link } from "react-router";
 import ApplicationCard from "../ApplicationCard/ApplicationCard";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const TrendingApps = ({ datas }) => {
   const [homePageData, setHomePageData] = useState([]);
 
+  // Load 8 data
   useEffect(() => {
-    // Load only the first 8 items
-    if (datas && datas.length > 0) {
-      setHomePageData(datas.slice(0, 8));
-    }
-  }, [datas]);
+    const fetchDatas = async () => {
+      try {
+        const res = await axios.get("/appsData.json");
+        const data = res.data;
+
+        if (Array.isArray(data)) {
+          setHomePageData(data.slice(0, 8));
+        } else {
+          console.log("Invalid Data format");
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchDatas();
+  }, []);
 
   return (
     <div className="pt-10">
