@@ -6,8 +6,13 @@ import LoadingPage from "../../Components/LoadingPage/LoadingPage";
 
 const AllApps = () => {
   const [allData, setAllData] = useState([]);
-
   const { loading, setLoading } = useContext(LoadingContext);
+  const [search, setSearch] = useState("");
+  const term = search.trim().toLocaleLowerCase();
+  const searchedApps = term
+    ? allData.filter((app) => app.title.toLocaleLowerCase().includes(term))
+    : allData;
+
   useEffect(() => {
     const allData = async () => {
       setLoading(true);
@@ -26,6 +31,7 @@ const AllApps = () => {
     };
     allData();
   }, []);
+
   return (
     <div>
       {loading ? (
@@ -38,19 +44,30 @@ const AllApps = () => {
           </p>
           <div className="w-full flex justify-between text-black pt-7">
             <p className="font-semibold text-xl">
-              {" "}
-              ({allData.length}) Apps Found{" "}
+              ({searchedApps.length}) Apps Found
             </p>
-            <input
-              type="search"
-              name="search"
-              placeholder="Search"
-              id=""
-              className="rounded px-2 py-1.5 input"
-            />
+
+            {/* Search Field start */}
+            <div className="join">
+              <div>
+                <label className="input validator join-item">
+                  <input
+                    defaultValue={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    type="search"
+                    placeholder="App Name"
+                    required
+                  />
+                </label>
+              </div>
+              <button className="btn btn-accent text-white join-item">
+                Search
+              </button>
+            </div>
+            {/* Search field end */}
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1   gap-4 pb-10 p-10">
-            {allData?.map((data) => (
+            {searchedApps?.map((data) => (
               <ApplicationCard data={data} key={data.id} />
             ))}
           </div>
