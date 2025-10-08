@@ -4,10 +4,12 @@ import { getStoredApp, removeFromStoreDb } from "../../Utility/addToLocalStor";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { LoadingContext } from "../../CustomContext/LoadingContext";
+import LoadingPage from "../../Components/LoadingPage/LoadingPage";
 
 const InstalledApps = () => {
   const [data, setData] = useState([]);
   const [filteredDt, setFilteredDt] = useState([]);
+  const [sort, setSort] = useState("");
   const { loading, setLoading } = useContext(LoadingContext);
 
   useEffect(() => {
@@ -49,28 +51,62 @@ const InstalledApps = () => {
       draggable: true,
     });
   };
+
+  // Handle sort
+  const handleSortingFunctionality = (sortType) => {
+    setSort(sortType);
+    if (sortType === "size") {
+      const sortedBySize = [...filteredDt].sort((a, b) => a.size - b.size);
+      setFilteredDt(sortedBySize);
+    } else if (sortType === "rating") {
+      const sortByRating = [...filteredDt].sort(
+        (a, b) => a.ratingAvg - b.ratingAvg
+      );
+      setFilteredDt(sortByRating);
+    } else if (sortType === "downloads") {
+      const sortByDownloads = [...filteredDt].sort(
+        (a, b) => a.downloads - b.downloads
+      );
+      setFilteredDt(sortByDownloads);
+      console.log(sort);
+    } else {
+      setFilteredDt(filteredDt);
+    }
+  };
+
   return (
     <div>
-      <div>
-        <h1 className="text-6xl font-bold">Your Installed Apps</h1>
-        <p className="text-gray-600 py-5 text-xl">
-          Explore All Trending Apps on the Market developed by us
-        </p>
-        <div className="text-right pb-10">
-          <select defaultValue="Sort" className="select">
-            <option disabled={true}>Sort By</option>
-            <option>Size</option>
-            <option>Raging</option>
-            <option>Downloads</option>
-          </select>
-        </div>
+      {loading ? (
+        <LoadingPage />
+      ) : (
         <div>
-          <InstalledAppCard
-            filteredDt={filteredDt}
-            handleRemoveDtFromLocalStor={handleRemoveDtFromLocalStor}
-          />
+          <h1 className="text-6xl font-bold">Your Installed Apps</h1>
+          <p className="text-gray-600 py-5 text-xl">
+            Explore All Trending Apps on the Market developed by us
+          </p>
+          <div className="text-right pb-10">
+            <select defaultValue="Sort" className="select">
+              <option>Sort By</option>
+              <option onClick={() => handleSortingFunctionality("size")}>
+                Size
+              </option>
+              <option onClick={() => handleSortingFunctionality("rating")}>
+                Rating
+              </option>
+              <option onClick={() => handleSortingFunctionality("downloads")}>
+                Downloads
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <InstalledAppCard
+              filteredDt={filteredDt}
+              handleRemoveDtFromLocalStor={handleRemoveDtFromLocalStor}
+            />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
