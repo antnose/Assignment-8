@@ -46,8 +46,8 @@ const InstalledApps = () => {
     removeFromStoreDb(id);
     setFilteredDt((prev) => prev.filter((rmId) => rmId.id !== id));
     Swal.fire({
-      title: "আমিতো ভালা না ভালা লইয়াই থাইকো! ",
-      icon: "error",
+      title: "App Uninstalled Successfully.",
+      icon: "success",
       draggable: true,
     });
   };

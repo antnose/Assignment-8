@@ -65,7 +65,7 @@ const AppDetails = () => {
       addToStoreDb(id);
       setInstall(true);
       Swal.fire({
-        title: "জানি বেশি দিন লাস্টিং করতাম না",
+        title: "App Installed Successfully",
         icon: "success",
         draggable: true,
       });
