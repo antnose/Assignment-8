@@ -66,11 +66,17 @@ const AllApps = () => {
             </div>
             {/* Search field end */}
           </div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1   gap-4 pb-10 p-10">
-            {searchedApps?.map((data) => (
-              <ApplicationCard data={data} key={data.id} />
-            ))}
-          </div>
+          {searchedApps.length === 0 ? (
+            <h1 className="text-7xl font-bold text-gray-500 py-20">
+              No Apps Found!
+            </h1>
+          ) : (
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1   gap-4 pb-10 p-10">
+              {searchedApps?.map((data) => (
+                <ApplicationCard data={data} key={data.id} />
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
