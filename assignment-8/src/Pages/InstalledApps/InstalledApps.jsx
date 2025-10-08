@@ -55,22 +55,12 @@ const InstalledApps = () => {
   // Handle sort
   const handleSortingFunctionality = (sortType) => {
     setSort(sortType);
-    if (sortType === "size") {
+    if (sortType === "lowToHigh") {
       const sortedBySize = [...filteredDt].sort((a, b) => a.size - b.size);
       setFilteredDt(sortedBySize);
-    } else if (sortType === "rating") {
-      const sortByRating = [...filteredDt].sort(
-        (a, b) => a.ratingAvg - b.ratingAvg
-      );
-      setFilteredDt(sortByRating);
-    } else if (sortType === "downloads") {
-      const sortByDownloads = [...filteredDt].sort(
-        (a, b) => a.downloads - b.downloads
-      );
-      setFilteredDt(sortByDownloads);
-      console.log(sort);
-    } else {
-      setFilteredDt(filteredDt);
+    } else if (sortType === "highToLow") {
+      const sortedBySize = [...filteredDt].sort((a, b) => b.size - a.size);
+      setFilteredDt(sortedBySize);
     }
   };
 
@@ -87,14 +77,12 @@ const InstalledApps = () => {
           <div className="text-right pb-10">
             <select defaultValue="Sort" className="select">
               <option>Sort By</option>
-              <option onClick={() => handleSortingFunctionality("size")}>
-                Size
+              <option onClick={() => handleSortingFunctionality("lowToHigh")}>
+                Low to High
               </option>
-              <option onClick={() => handleSortingFunctionality("rating")}>
-                Rating
-              </option>
-              <option onClick={() => handleSortingFunctionality("downloads")}>
-                Downloads
+
+              <option onClick={() => handleSortingFunctionality("highToLow")}>
+                High to Low
               </option>
             </select>
           </div>

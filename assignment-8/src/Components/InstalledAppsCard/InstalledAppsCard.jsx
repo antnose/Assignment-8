@@ -36,7 +36,7 @@ const InstalledAppsCard = ({ filterDt, handleRemoveDtFromLocalStor }) => {
             </div>
 
             <div className="mt-4 flex gap-2 items-center justify-center">
-              <p>{formatDownloads(filterDt.size)} </p>
+              <p>{formatDownloads(filterDt.size)} MB </p>
             </div>
           </div>
         </div>
