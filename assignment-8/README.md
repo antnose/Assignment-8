@@ -94,8 +94,3 @@ const formatDownloads = (num) => {
   <Bar dataKey="count" fill="orange" radius={[0, 8, 8, 0]} />
 </BarChart>
 ```
-
----
-
-Would you like me to make it **GitHub-optimized** (with badges, live preview, emojis, etc.)?  
-That version looks even more **premium and professional**.
