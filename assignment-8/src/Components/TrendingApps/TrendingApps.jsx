@@ -1,31 +1,7 @@
 import { Link } from "react-router";
 import ApplicationCard from "../ApplicationCard/ApplicationCard";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
-const TrendingApps = () => {
-  const [homePageData, setHomePageData] = useState([]);
-
-  // Load 8 data
-  useEffect(() => {
-    const fetchDatas = async () => {
-      try {
-        const res = await axios.get("/appsData.json");
-        const data = res.data;
-
-        if (Array.isArray(data)) {
-          setHomePageData(data.slice(0, 8));
-        } else {
-          console.log("Invalid Data format");
-        }
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    fetchDatas();
-  }, []);
-
+const TrendingApps = ({ homePageData }) => {
   return (
     <div className="pt-10">
       <h1 className="text-5xl font-bold mb-4">Trending Apps</h1>

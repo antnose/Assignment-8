@@ -6,17 +6,17 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Legend,
 } from "recharts";
 
 const ReactCharts = ({ ratings, description }) => {
-  const chartData = ratings?.map((r) => ({
-    name: r.name,
-    count: r.count,
-  }));
+  const chartData =
+    ratings?.map((r) => ({
+      name: r.name,
+      count: r.count,
+    })) || [];
   return (
     <div className="w-full   rounded-2xl p-4">
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height={400}>
         <BarChart
           layout="vertical"
           data={chartData}
@@ -31,7 +31,7 @@ const ReactCharts = ({ ratings, description }) => {
           <XAxis type="number" tick={{ fontSize: 14 }} />
           <YAxis dataKey="name" type="category" tick={{ fontSize: 14 }} />
           <Tooltip />
-          <Legend />
+
           <Bar
             dataKey="count"
             fill="orange"
