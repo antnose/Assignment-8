@@ -27,22 +27,16 @@ const InstalledAppsCard = ({ filterDt, handleRemoveDtFromLocalStor }) => {
           <div className="flex gap-7">
             <div className="mt-4 flex gap-2  items-center justify-center">
               <img className="w-4" src={downloadImg} alt="" />{" "}
-              <p>
-                <p>{formatDownloads(filterDt.downloads)} </p>
-              </p>
+              <p>{formatDownloads(filterDt.downloads)} </p>
             </div>
 
             <div className="mt-4 flex gap-2 items-center justify-center">
               <img className="w-4" src={ratingImg} alt="" />{" "}
-              <p>
-                <p>{formatDownloads(filterDt.downloads)} </p>
-              </p>
+              <p>{formatDownloads(filterDt.downloads)} </p>
             </div>
 
             <div className="mt-4 flex gap-2 items-center justify-center">
-              <p>
-                <p>{formatDownloads(filterDt.size)} </p>
-              </p>
+              <p>{formatDownloads(filterDt.size)} </p>
             </div>
           </div>
         </div>
